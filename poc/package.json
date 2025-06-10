@@ -1,0 +1,39 @@
+{
+  "name": "cross-chain-poc",
+  "version": "1.0.0",
+  "description": "Cross-chain interoperability PoC for WeFi omnichain architecture",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:ethereum && npm run build:cosmos && npm run build:relayer",
+    "build:ethereum": "cd ethereum && npm run compile",
+    "build:cosmos": "cd cosmos && npm run build",
+    "build:relayer": "cd relayer && npm run build",
+    "test": "npm run test:ethereum && npm run test:integration",
+    "test:ethereum": "cd ethereum && npm run test",
+    "test:integration": "node scripts/integration-test.js",
+    "deploy": "cd ethereum && npm run deploy",
+    "start:relayer": "cd relayer && npm start",
+    "demo": "node scripts/demo.js"
+  },
+  "keywords": [
+    "cross-chain",
+    "ethereum",
+    "cosmos",
+    "layerzero",
+    "bridge",
+    "wefi"
+  ],
+  "author": "WeFi Engineering Team",
+  "license": "MIT",
+  "workspaces": [
+    "ethereum",
+    "cosmos", 
+    "relayer"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "dotenv": "^16.0.0"
+  }
+}
