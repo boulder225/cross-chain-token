@@ -43,10 +43,15 @@ const config: HardhatUserConfig = {
     tests: "./test",
     cache: "./cache",
     artifacts: "./artifacts",
+    root: ".",
+    node_modules: "./node_modules"
   },
   mocha: {
     timeout: 60000,
   },
+  resolver: {
+    paths: ["node_modules/@openzeppelin/contracts"]
+  }
 };
 
 export default config;
