@@ -59,7 +59,7 @@ COSMOS_MNEMONIC=your_mnemonic_phrase
 ## 🚀 Next Steps (Phase 2)
 
 ### Ready for Implementation:
-1. **WEFI Token Contract** - ERC20 implementation
+1. **Token Contract** - ERC20 implementation
 2. **CrossChainBridge Contract** - Lock mechanism with events
 3. **Cosmos Mint Module** - Token minting simulation
 4. **Mock Relayer** - Event listening and bridge logic

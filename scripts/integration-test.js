@@ -13,7 +13,7 @@ console.log('🧪 Starting Cross-Chain Integration Test...\n');
 async function runIntegrationTest() {
   try {
     console.log('📋 Test Plan:');
-    console.log('  1. Deploy WEFI token contract');
+    console.log('  1. Deploy token contract');
     console.log('  2. Deploy CrossChainBridge contract');
     console.log('  3. Start mock relayer service');
     console.log('  4. Execute lock transaction on Ethereum');

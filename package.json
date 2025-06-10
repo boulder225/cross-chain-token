@@ -1,7 +1,7 @@
 {
   "name": "cross-chain-poc",
   "version": "1.0.0",
-  "description": "Cross-chain interoperability PoC for WeFi omnichain architecture",
+  "description": "Cross-chain interoperability PoC for omnichain architecture",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:ethereum && npm run build:cosmos && npm run build:relayer",
@@ -20,10 +20,9 @@
     "ethereum",
     "cosmos",
     "layerzero",
-    "bridge",
-    "wefi"
+    "bridge"
   ],
-  "author": "WeFi Engineering Team",
+  "author": "Engineering Team",
   "license": "MIT",
   "workspaces": [
     "ethereum",

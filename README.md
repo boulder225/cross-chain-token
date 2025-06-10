@@ -1,7 +1,7 @@
 # Cross-Chain Interoperability PoC
 
 ## Overview
-This project demonstrates core mechanics of WeFi's omnichain architecture using a simplified LayerZero-like approach for cross-chain token transfers.
+This project demonstrates core mechanics of an omnichain architecture using a simplified LayerZero-like approach for cross-chain token transfers.
 
 ## Architecture
 ```
@@ -58,7 +58,7 @@ npm run demo
 ## Components
 
 ### Ethereum Lock Contract
-- Locks WEFI tokens securely
+- Locks tokens securely
 - Emits cross-chain events
 - Handles ERC20 token custody
 
@@ -95,7 +95,7 @@ npm run test:integration
 ETHEREUM_RPC_URL=http://localhost:8545
 COSMOS_RPC_URL=http://localhost:26657
 PRIVATE_KEY=your_private_key
-WEFI_TOKEN_ADDRESS=deployed_token_address
+TOKEN_ADDRESS=deployed_token_address
 BRIDGE_CONTRACT_ADDRESS=deployed_bridge_address
 ```
 
